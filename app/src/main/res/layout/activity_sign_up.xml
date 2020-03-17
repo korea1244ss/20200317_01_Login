@@ -5,64 +5,86 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingLeft="25dp"
-    android:paddingRight="25dp"
-    android:paddingTop="57dp"
-    
+    android:background="#FFFFFF"
     tools:context=".SignUpActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center_vertical">
-        
-        <ImageView
-            android:layout_width="54dp"
-            android:layout_height="54dp"
-            android:src="@drawable/rectangle"/>
-        <TextView
-            android:layout_width="wrap_content"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="57dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="7dp"
-            android:textSize="17sp"
-            android:text="이메일"
-            android:textColor="#000000"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"/>
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:src="@drawable/rectangle"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:textSize="17sp"
+                android:text="이메일"
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
 
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="#2767E3"
-            android:text="사용 가능한 앱입니다."/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#2767E3"
+                android:text="사용 가능한 앱입니다."/>
+
+            <FrameLayout
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent">
 
 
-        
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layKut_height="wrap_content"
+                    android:hint="이메일"
+                    android:layout_height="10dp" />
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:text="중복확인"/>
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+
     </LinearLayout>
 
-    <FrameLayout
-        android:layLut_width="match_parent"
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#F3F4F5"
+        android:layout_marginTop="40dp">
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp">
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layKut_height="wrap_content"
-            android:hint="이메일"
-            android:paddingLeft="10dp"/>
-
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right|center_vertical"
-            android:text="중복확인"/>
-
-
-
-    </FrameLayout>
+        android:text=""/>
 </LinearLayout>
